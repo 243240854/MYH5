@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>失物招领</title>
+    <script type="text/javascript" src="JavaScript.js"></script>
+    <link href="StyleSheet1.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+       <div id="header"> 
+       
+       <a href="#" >加入收藏</a>|
+       <a href="#" >设为主页</a>|
+       <a href="#" >关于我们</a>|
+       <a href="mailto:1@ynufe.edu.cn">联系我们</a><br />
+           <img src="image/0.jpg" width="980px" height="200px"/>
+           </div>
+   
+
+     <div id="nav">
+        <ul>
+           <li><a href="首页.aspx">网站首页</a></li>
+           <li><a href="http://www.cswzl.com/lostinfo.action" target="content">寻物启事</a></li>
+           <li><a href="http://www.cswzl.com/missinfo.action" target="content">寻人启事</a></li>
+           <li><a href="招领处.aspx">招领处</a></li>
+           <li><a href="http://www.chinanews.com/"target="content">新闻资讯</a></li>
+           <li><a href="帮助.aspx" style="margin-right:0px" >帮助</a></li>
+        </ul>
+     </div>
+    
+     <div id="content">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+     </div> 
+
+     <div id="endimg">
+     </div>
+    
+    <div id="footer"><br />云南财经大学信息学院<br />201605001399 杜龙斌 卓计16-1</div>
+       
+    </form>
+</body>
+</html>
